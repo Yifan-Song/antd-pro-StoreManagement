@@ -41,6 +41,7 @@ class BasicForms extends PureComponent {
         json['description'] = values['goal']
         fetch("http://pipipan.cn:1000/api/v1/Good/store/1555594479362", {
               method: 'POST',
+              mode:'no-cors',
               credentials: 'include',
               headers: {
                 'Accept': 'application/json',
